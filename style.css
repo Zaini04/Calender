@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(61, 67, 64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.calander{
+    background-color: rgb(209 209 217);
+    border-radius: none;
+    border-radius: 25px;
+    /* border: 2px solid black; */
+    font-family:sans-serif;
+}
+.calendar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-bottom: 2px solid blue; */
+    padding: 15px;
+    background-color: rgb(209 209 217);
+    border-radius: 10px;
+}
+.calendar-header button{
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 7px;
+    border: none;
+}
+.calendar-header button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+#month-year{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.week-days, #calendar-days{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    padding: 10px;
+    /* border: 1px solid blue; */
+    gap: 2px;
+}
+.week-days div, #calendar-days div{
+    padding: 10px;
+    /* border: 0.5px solid black; */
+    border-radius: 50%;
+    font-weight: 700;
+}
+.week-days div{
+    color: rgb(250, 248, 248);
+    background-color: rgb(68, 70, 71);
+    border-radius: 10px;
+}
+#calendar-days div{
+    cursor: pointer;
+    padding-left: 15px;
+}
+#calendar-days div:hover{
+    opacity: 0.5;
+}
+#calendar-days .today{
+    background-color: rgb(94, 17, 78);
+    color: white;
+
+}
+.lastDate{
+    opacity: 0.3;
+}
